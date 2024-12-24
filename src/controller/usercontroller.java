@@ -1,25 +1,29 @@
 package controller;
 
 import model.*;
+import view.userPdf;
 import view.userview;
+import view.userPdf;
 
+import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.List;
-import javax.swing.JOptionPane;
 
 public class usercontroller {
     private userview view;
     private usermapper mapper;
+    private userPdf pdf;
 
-    public usercontroller(userview view, usermapper mapper) {
+    public usercontroller(userview view, usermapper mapper, userPdf pdf) {
         this.view = view;
         this.mapper = mapper;
+        this.pdf = pdf;
 
         this.view.addAddUserListener(new AddUserListener());
         this.view.addRefreshListener(new RefreshListener());
+        this.view.addExportListener(new ExportListener());
     }
-
     class AddUserListener implements ActionListener {
         @Override
         public void actionPerformed(ActionEvent e) {
@@ -45,6 +49,14 @@ public class usercontroller {
                     .map(u -> u.getName() + " (" + u.getEmail() + ")")
                     .toArray(String[]::new);
             view.setUserList(userArray);
+        }
+    }
+
+    class ExportListener implements ActionListener {
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            List<user> users = mapper.getAllUsers();
+            pdf.exportPdf(users);
         }
     }
 }
