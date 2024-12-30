@@ -20,7 +20,7 @@ public class main {
         IntStream.range(1, 101).forEach(i -> {
             user newUser = new user();
             newUser.setName("User " + i);
-            newUser.setEmail("user" + i + "@example.com");
+            newUser.setEmail("user" + i + "@mail.com");
             mapper.insertUser(newUser);
         });
         session.commit(); // Jangan lupa commit transaksi untuk menyimpan data
