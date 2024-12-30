@@ -1,0 +1,23 @@
+<component name="libraryTable">
+  <library name="lib">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/jfc-httpclient/lib/httpcore5-5.3.1-tests.jar!/" />
+      <root url="jar://$PROJECT_DIR$/jfc-httpclient/lib/commons-cli-1.9.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/jfc-httpclient/lib/rxjava-2.2.21.jar!/" />
+      <root url="jar://$PROJECT_DIR$/jfc-httpclient/lib/json-simple-1.1.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/jfc-httpclient/lib/reactive-streams-1.0.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/jfc-httpclient/lib/httpcore5-testing-5.3.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/jfc-httpclient/lib/httpclient5-testing-5.4.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/jfc-httpclient/lib/httpclient5-5.4.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/jfc-httpclient/lib/slf4j-api-1.7.36.jar!/" />
+      <root url="jar://$PROJECT_DIR$/jfc-httpclient/lib/httpcore5-reactive-5.3.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/jfc-httpclient/lib/httpcore5-5.3.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/jfc-httpclient/lib/httpcore5-h2-5.3.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/jfc-httpclient/lib/httpclient5-cache-5.4.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/jfc-httpclient/lib/httpclient5-fluent-5.4.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/jfc-httpclient/lib/rxjava-3.1.9.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
